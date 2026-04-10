@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+@plugin 'daisyui';
+
+@plugin 'daisyui/theme' {
+	name: 'invio';
+	default: true;
+	prefersdark: true;
+	color-scheme: 'dark';
+	--color-base-100: #17184b;
+	--color-base-200: #12133a;
+	--color-base-300: #17184b;
+	--color-base-content: #f0eee9;
+	--color-primary: #d6b4fc;
+	--color-primary-content: #17184b;
+	--color-secondary: #d8e63c;
+	--color-secondary-content: #17184b;
+	--color-accent: #c079ff;
+	--color-accent-content: oklch(29% 0.149 302.717);
+	--color-neutral: #a8b2c1;
+	--color-neutral-content: #17184b;
+	--color-info: #6fa8dc;
+	--color-info-content: #17184b;
+	--color-success: #6fd3a3;
+	--color-success-content: #17184b;
+	--color-warning: #d4b63d;
+	--color-warning-content: #17184b;
+	--color-error: #c25566;
+	--color-error-content: #17184b;
+	--radius-selector: 0.5rem;
+	--radius-field: 0.5rem;
+	--radius-box: 1rem;
+	--size-selector: 0.21875rem;
+	--size-field: 0.3rem;
+	--border: 1px;
+	--depth: 0;
+	--noise: 0;
+}
+
+@plugin 'daisyui/theme' {
+	name: 'invio-light';
+	default: false;
+	prefersdark: false;
+	color-scheme: 'light';
+	--color-base-100: #f7f8fc;
+	--color-base-200: #eef1f9;
+	--color-base-300: #e3e7f2;
+	--color-base-content: #202269;
+	--color-primary: #c79bfc;
+	--color-primary-content: #17184b;
+	--color-secondary: #c9d92e;
+	--color-secondary-content: #17184b;
+	--color-accent: #b46bff;
+	--color-accent-content: #17184b;
+	--color-neutral: #a8b2c1;
+	--color-neutral-content: #17184b;
+	--color-info: #5f95c9;
+	--color-info-content: #ffffff;
+	--color-success: #4fbf8c;
+	--color-success-content: #ffffff;
+	--color-warning: #c9a92e;
+	--color-warning-content: #17184b;
+	--color-error: #b94b5c;
+	--color-error-content: #ffffff;
+	--radius-selector: 0.5rem;
+	--radius-field: 0.5rem;
+	--radius-box: 1rem;
+	--size-selector: 0.21875rem;
+	--size-field: 0.3rem;
+	--border: 1px;
+	--depth: 0;
+	--noise: 0;
+}
