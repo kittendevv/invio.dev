@@ -5,7 +5,7 @@
 	import Navbar from '$lib/widgets/navbar.svelte';
 	import ImageCarousel from '$lib/widgets/image-carousel.svelte';
 	import Features from '$lib/widgets/features.svelte';
-	import Templates from '$lib/widgets/templates.svelte';
+	import Screenshots from '$lib/widgets/screenshots.svelte';
 	import CTA from '$lib/widgets/cta.svelte';
 	import Footer from '$lib/widgets/footer.svelte';
 
@@ -69,8 +69,8 @@
 	<ImageCarousel id="invoices" images={carouselImages} speed={26} maxHeight={420} />
 
 	<Features />
-  
-  <Templates />
+
+	<Screenshots />
 
 	<CTA {data} />
 
