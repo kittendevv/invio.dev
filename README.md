@@ -1,42 +1,17 @@
-# sv
+## [invio.dev](https://invio.dev/)
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+![Website Screenshot](https://cdn.hackclub.com/019d7dd0-c171-78cc-a253-38cc9eecfdaf/Screenshot%202026-04-11%20at%2020-31-42%20Invio.png)
 
-## Creating a project
+Website for my project [invio](https://github.com/kittendevv/Invio), website is made using Bun + SvelteKit + TailwindCSS + DaisyUI.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Feel free to use this as somewhat of a website template, I would not reccomend this because it would probably be a pain. But feel free :).
 
-```sh
-# create a new project
-npx sv create my-app
+**Development:**
+```
+bun install
+bun dev
 ```
 
-To recreate this project with the same configuration:
+**Deployment**
 
-```sh
-# recreate this project
-bun x sv@0.12.8 create --template minimal --types ts --add prettier eslint tailwindcss="plugins:none" --install bun .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+I chose to deploy the site on github pages using a github action, you can deploy it however you see fit since it just builds to a static site.
