@@ -22,9 +22,9 @@
 	</div>
 	<div class="flex-none">
 		<ul class="menu menu-horizontal px-1">
-			<li><a href="/">Docs</a></li>
-			<li><a href="/">Github</a></li>
-			<li><a href="/">Templates</a></li>
+			<li><a href="https://github.com/kittendevv/Invio/wiki">Docs</a></li>
+			<li><a href="https://github.com/kittendevv/Invio/">Github</a></li>
+			<li><a href="/templates">Templates</a></li>
 		</ul>
 	</div>
 </div>

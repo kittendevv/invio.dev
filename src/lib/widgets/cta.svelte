@@ -19,11 +19,13 @@
 				<h2 class="ml-1 text-xl">{downloads()}</h2>
 			</div>
 			<div class="card-actions justify-center py-4">
-				<button class="btn btn-primary">
+				<a href="https://github.com/kittendevv/Invio/wiki/Quick-Start" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
 					<Rocket />
 					Quick Start
-				</button>
-				<button class="btn btn-ghost">Try Demo</button>
+				</a>
+				<a href="https://demo.invio.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+					Try Demo
+				</a>
 			</div>
 		</div>
 	</div>

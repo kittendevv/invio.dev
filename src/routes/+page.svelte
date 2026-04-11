@@ -51,22 +51,22 @@
 	<Navbar />
 
 	<div class="bg-base-200">
-		<div class="container mx-auto flex w-full max-w-7xl justify-center py-20">
+		<div class="container mx-auto flex w-full max-w-7xl justify-center py-10 md:py-20">
 			<div class="text-center">
-				<h1 class="text-6xl font-bold">
+				<h1 class="text-5xl md:text-6xl font-bold">
 					Selfhosted invoicing <span class="text-primary">without the bloat.</span>
 				</h1>
 				<br />
-				<button class="btn btn-primary">
+				<a href="https://github.com/kittendevv/Invio" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
 					<Code class="h-5 w-5" />
 					View on github
-				</button>
-				<button class="btn btn-ghost"> Try Demo </button>
+				</a>
+				<a href="https://demo.invio.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost"> Try Demo </a>
 			</div>
 		</div>
 	</div>
 
-	<ImageCarousel id="invoices" images={carouselImages} speed={26} maxHeight={420} />
+	<ImageCarousel id="invoices" images={carouselImages} speed={26} class="h-50 md:h-85 lg:h-100" />
 
 	<Features />
 
