@@ -11,7 +11,7 @@
 	<Navbar />
 	<div class="container mx-auto w-full max-w-2xl justify-center pt-20">
         <h1 class="text-4xl text-center font-bold">Premium templates <span class="text-primary">coming soon...</span></h1>
-        <div class="flex justify-center pb-30 text-base-100 mask-linear-[black,transparent_75%]">
+        <div class="flex justify-center pb-30 text-info mask-linear-[black,transparent_75%]">
             {@html Template}
         </div>
 	</div>
