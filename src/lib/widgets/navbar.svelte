@@ -1,6 +1,10 @@
+<script>
+	import { resolve } from '$app/paths';
+</script>
+
 <div class="navbar sticky top-0 z-50 backdrop-blur-lg">
 	<div class="flex-1">
-		<a href="/" class="btn inline-flex items-center gap-2 text-xl shadow-md btn-ghost">
+		<a href={resolve('/')} class="btn inline-flex items-center gap-2 text-xl btn-ghost">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 24 24"
@@ -22,9 +26,23 @@
 	</div>
 	<div class="flex-none">
 		<ul class="menu menu-horizontal px-1">
-			<li><a href="https://github.com/kittendevv/Invio/wiki">Docs</a></li>
-			<li><a href="https://github.com/kittendevv/Invio/">Github</a></li>
-			<li><a href="/templates">Templates</a></li>
+			<li>
+				<a href="https://github.com/kittendevv/Invio/wiki"
+					target="_blank"
+					rel="noopener noreferrer external"
+					>
+					Docs
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/kittendevv/Invio/"
+					target="_blank"
+					rel="noopener noreferrer external"
+					>
+					Github
+				</a>
+			</li>
+			<li><a href={resolve('/templates')}>Templates</a></li>
 		</ul>
 	</div>
 </div>
