@@ -4,8 +4,8 @@
 	import Download from '@lucide/svelte/icons/download';
 
 	let { data } = $props();
-	const downloads = () => data?.item?.['invio-package-downloads']?.formatted ?? '0';
-	const stars = () => data?.item?.['invio-stars']?.formatted ?? '0';
+	const downloads = () => data?.item?.invio_total_downloads?.total?.formatted ?? '0';
+	const stars = () => data?.item?.invio_stars?.stars?.formatted ?? '0';
 </script>
 
 <div class="container mx-auto flex w-full max-w-7xl justify-center py-5">
