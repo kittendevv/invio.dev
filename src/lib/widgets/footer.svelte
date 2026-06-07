@@ -21,19 +21,20 @@
 	</aside>
 	<nav>
 		<h6 class="footer-title">Links</h6>
-		<a href="/" class="link link-hover">Github</a>
-		<a href="/" class="link link-hover">Documentation</a>
-		<a href="/" class="link link-hover">Templates</a>
+		<a href="https://github.com/kittendevv/Invio/" class="link link-hover">Github</a>
+		<a href="https://github.com/kittendevv/Invio/wiki" class="link link-hover">Documentation</a>
+		<a href="/templates" class="link link-hover">Templates</a>
 	</nav>
 	<nav>
 		<h6 class="footer-title">Creator</h6>
-		<a href="/" class="link link-hover">About Me</a>
-		<a href="/" class="link link-hover">Github Profile</a>
-		<a href="/" class="link link-hover">Support Development</a>
+		<a href="https://codingkitten.dev/about/" class="link link-hover">About Me</a>
+		<a href="https://github.com/kittendevv/" class="link link-hover">Github Profile</a>
+		<a href="https://ko-fi.com/codingkitten" class="link link-hover">Support Development</a>
 	</nav>
 	<nav>
-		<h6 class="footer-title">Legal</h6>
+		<h6 class="footer-title">Info</h6>
 		<a href="/license" class="link link-hover">License</a>
-		<a href="/" class="link link-hover">Privacy policy</a>
+		<a href="/sitemap.xml" class="link link-hover">sitemap.xml</a>
+		<a href="/robots.txt" class="link link-hover">robots.txt</a>
 	</nav>
 </footer>

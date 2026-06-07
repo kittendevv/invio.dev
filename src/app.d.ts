@@ -10,4 +10,18 @@ declare global {
 	}
 }
 
+declare module '*.svg?component' {
+	import type { Component } from 'svelte';
+
+	const SvgComponent: Component<Record<string, unknown>>;
+	export default SvgComponent;
+}
+
+declare module '$lib/assets/templ.svg?component' {
+	import type { Component } from 'svelte';
+
+	const SvgComponent: Component<Record<string, unknown>>;
+	export default SvgComponent;
+}
+
 export {};

@@ -10,40 +10,35 @@
 		id,
 		images = [],
 		speed = 40,
-		maxHeight = 420
+		class: className = 'h-105'
 	}: {
 		id?: string;
 		images?: CarouselImage[];
 		speed?: number;
-		maxHeight?: number | string;
+		class?: string;
 	} = $props();
-
-	let resolvedMaxHeight = $derived(typeof maxHeight === 'number' ? `${maxHeight}px` : maxHeight);
 </script>
 
-<section class="relative overflow-hidden py-16" {id}>
+<section class="relative overflow-x-hidden my-4 md:my-16" {id}>
 	<div class="edge-cover pointer-events-none absolute top-0 left-0 z-20 bg-base-200"></div>
 	<div class="edge-cover pointer-events-none absolute top-0 right-0 z-20 bg-base-200"></div>
 
 	<div
-		class="fade-edge pointer-events-none absolute top-0 z-10 bg-gradient-to-r from-base-200 to-transparent"
+		class="fade-edge pointer-events-none absolute top-0 z-10 bg-linear-to-r from-base-200 to-transparent"
 		style="left: var(--edge-inset);"
 	></div>
 	<div
-		class="fade-edge pointer-events-none absolute top-0 z-10 bg-gradient-to-l from-base-200 to-transparent"
+		class="fade-edge pointer-events-none absolute top-0 z-10 bg-linear-to-l from-base-200 to-transparent"
 		style="right: var(--edge-inset);"
 	></div>
 
 	<div class="carousel-wrapper">
-		<div
-			class="carousel-container"
-			style={`--scroll-speed: ${speed}s; --carousel-max-height: ${resolvedMaxHeight};`}
-		>
+		<div class="carousel-container" style={`--scroll-speed: ${speed}s;`}>
 			<div class="carousel-track animate-scroll">
-				{#each images as img}
+				{#each images as img, i (img.src + '-' + i)}
 					<div class="carousel-item">
 						<img
-							class="invoice-img rounded-lg bg-white object-contain shadow-md"
+							class={`invoice-img ${className} rounded-lg bg-white object-contain shadow-md`}
 							src={img.src}
 							alt={img.alt || 'Invoice preview'}
 							width={img.width ?? 297.75}
@@ -55,10 +50,10 @@
 			</div>
 
 			<div class="carousel-track animate-scroll" aria-hidden="true">
-				{#each images as img}
+				{#each images as img, i (img.src + '-dup-' + i)}
 					<div class="carousel-item">
 						<img
-							class="invoice-img rounded-lg bg-white object-contain shadow-md"
+							class={`invoice-img ${className} rounded-lg bg-white object-contain shadow-md`}
 							src={img.src}
 							alt=""
 							width={img.width ?? 297.75}
@@ -98,10 +93,6 @@
 		animation: scroll var(--scroll-speed) linear infinite;
 	}
 
-	section:hover .animate-scroll {
-		animation-play-state: paused;
-	}
-
 	.carousel-wrapper {
 		overflow: visible;
 		width: 100%;
@@ -127,21 +118,10 @@
 	}
 
 	.invoice-img {
-		height: var(--carousel-max-height);
 		width: auto;
 		max-width: none;
-		transition:
-			transform 0.18s cubic-bezier(0.6, 0.2, 0.3, 1),
-			box-shadow 0.18s cubic-bezier(0.6, 0.2, 0.3, 1);
-		will-change: transform;
 		z-index: 0;
 		display: block;
-	}
-
-	.invoice-img:hover {
-		transform: scale(1.055);
-		z-index: 2;
-		box-shadow: 0 2px 24px 0 rgb(0 0 0 / 0.18);
 	}
 
 	.fade-edge {
