@@ -17,7 +17,7 @@
 			/>
 		</svg>
 		<h5 class="text-xl font-bold">Invio</h5>
-		<p>Bloat free invoicing for everyone.</p>
+		<p>Hosting sponsored by <a class="underline" href="https://www.simafri.com/en/managed-vps/" rel="sponsored">Simafri</a> (managed VPS)</p>
 	</aside>
 	<nav>
 		<h6 class="footer-title">Links</h6>

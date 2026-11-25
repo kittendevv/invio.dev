@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Code from '@lucide/svelte/icons/code';
-
+	import { onMount } from 'svelte';
+	
 	// widgets
 	import Navbar from '$lib/widgets/navbar.svelte';
 	import ImageCarousel from '$lib/widgets/image-carousel.svelte';
@@ -44,7 +45,12 @@
 		}
 	];
 
-	const { data } = $props();
+	let data = $state<any>(null);
+
+	onMount(async () => {
+		const res = await fetch('/api/all');
+		data = await res.json();
+	});
 </script>
 
 <div class="bg-base-200">
